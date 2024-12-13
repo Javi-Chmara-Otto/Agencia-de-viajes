@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Agencia de viajes</title>
+  </head>
+  <body>
+
+    <!-- ========================================= -->
+    <!-- ENCABEZADO -->
+    <!-- ========================================= -->
+    <header class="container-fluid bg-dark d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos 0800-222-4554</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           <span class="text-primary fs-5 fw-bold">Agencia de viajes</span> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Vuelos">Vuelos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Paquetes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alojamientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Asistencia</a>
+              </li>
+              
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="E-mail" aria-label="email"> -->
+              <button class="btn btn-primary btn-primary-outline-success" type="button" id="button-header">Ingresar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- INTRO -->
+
+      <!-- <div class="wrap">
+        <div class="wrap-texto">
+            <h1>Tu agencia de <span class="text-primary">viajes</span> favorita</h1>
+            <p><span class="text-primary">Viajes sin Fronteras</span> es la agencia de turismo que va a ayudarte a cumplir tus sueños. Destinos nacionales, internacionales, paquetes turísticos, escapadas cortas, y muchas opciones más.</p>
+        </div>
+      </div> -->
+
+
+      <!-- BUSQUEDA DE VUELOS -->
+      <section>
+        <div class="wrap">
+          <form action="#" class="form">
+            <div class="container">
+                <p><span>Encontrá los mejores vuelos.</span></p>
+                <input id="opcion1" type="radio" name="opcion" checked>
+                <label class="container-button" for="opcion1">Ida y vuelta</label>
+                <input id="opcion2" type="radio" name="opcion">
+                <label class="container-button" for="opcion2">Solo ida</label>
+                <input id="opcion3" type="radio" name="opcion">
+                <label class="container-button" for="opcion3">Multidestino</label>
+                <button type="button" class="btn btn-outline-primary">Agregar alojamiento</button>
+                <br><br>
+                <div class="row g-4" id="form-group">
+                    <div class="col-sm-2">
+                      <label for="">Salgo de</label>
+                      <input type="text" class="form-control" placeholder="Ingresa una ciudad" aria-label="City">
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="">Voy a</label>
+                      <input type="text" class="form-control" placeholder="Ingresa una ciudad" aria-label="State">
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="">Salida</label>
+                      <input type="text" class="form-control" placeholder="07/04/2024" aria-label="Zip">
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="">Regreso</label>
+                      <input type="text" class="form-control" placeholder="07/04/2024" aria-label="Zip">
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="">Personas</label>
+                      <input type="text" class="form-control" placeholder="1 Persona" aria-label="Zip">
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="validationDefault04">Clase</label>
+                      <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Todas</option>
+                        <option>Económica</option>
+                        <option>Premium</option>
+                        <option>Business</option>
+                        <option>Primera</option>
+                      </select>
+                    </div>
+                    <div class="col-sm">
+                      <button type="button" class="btn btn-primary" id="button">Buscar</button>
+                    </div>
+                  </div>
+            </div>
+          </form>
+        </div>  
+      </section>
+      <!-- GRUPO DE CARDS -->
+
+      <div class="grid-container">
+        <div class="row row-cols-4">
+          <div class="col">
+            <div class="card">
+              <img src="./Img/Rio de Janeiro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Río de Janeiro</h5>
+                <p class="card-text">Buenos Aires</p>
+                <hr>
+                <div class="card-text-price">
+                  <p class="text-price">Precio por persona</p>
+                  <p class="price">$ 313.142</p>
+                  <p class="text-price">Incluye impuestos, tasas y cargos</p>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>              
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./Img/madrid.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Madrid</h5>
+                <p class="card-text">Buenos Aires</p>
+                <hr>
+                <div class="card-text-price">
+                  <p class="text-price">Precio por persona</p>
+                  <p class="price">$ 1.361.186</p>
+                  <p class="text-price">Incluye impuestos, tasas y cargos</p>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./Img/Roma.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Roma</h5>
+                <p class="card-text">Buenos Aires</p>
+                <hr>
+                <div class="card-text-price">
+                  <p class="text-price">Precio por persona</p>
+                  <p class="price">$ 1.205.847</p>
+                  <p class="text-price">Incluye impuestos, tasas y cargos</p>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./Img/machu-picchu.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Machu Pichu</h5>
+                <p class="card-text">Buenos Aires</p>
+                <hr>
+                <div class="card-text-price">
+                  <p class="text-price">Precio por persona</p>
+                  <p class="price">$ 512.900</p>
+                  <p class="text-price">Incluye impuestos, tasas y cargos</p>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+
+      
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

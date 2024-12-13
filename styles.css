@@ -1,0 +1,108 @@
+:root {
+    --principal: #ffffff;
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrap {
+    width: 100vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .10), rgb(0 0 0 / .10)), url(./Img/playa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+.wrap-texto {
+    color: white;
+    text-align: center;
+    width: 50%;
+} */
+
+.nav-item {
+    margin-right: 12px;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 25px;
+    /* margin: 50px; */
+    border: 1px solid #959595;
+    border-radius: 20px;
+    float: inline-start;
+    background-color: white;
+}
+
+.container-button {
+    padding-right: 12px;
+}
+
+.grid-container {
+    width: 100%;
+    margin: 100px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    /* border: none; */
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.card-text {
+    padding-bottom: 50px;
+}
+
+hr {
+    /* height: 1px; */
+    background-color: black;
+}
+
+.card-text-price {
+    margin: 0;
+    padding: 0;
+    color: #505050;
+}
+
+.text-price {
+    font-weight: 700;
+    color: #303030;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 26px;
+    color: #303030;
+}
